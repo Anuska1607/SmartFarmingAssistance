@@ -11,11 +11,12 @@ seaborn==0.13.2
 
 # Geospatial/Weather
 geopy==2.4.1
-pytemperature==2.0.0
+pint==0.23
 requests==2.32.5
 
 # Image processing
 Pillow==11.3.0
 
 # Optional (for API key management)
+
 python-dotenv==0.9.9
