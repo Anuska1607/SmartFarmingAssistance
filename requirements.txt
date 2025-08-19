@@ -1,0 +1,21 @@
+# Core dependencies
+streamlit==1.48.1
+pandas==2.3.1
+numpy==2.3.2
+scikit-learn==1.7.1
+joblib==1.5.1
+
+# Visualization
+matplotlib==3.10.5
+seaborn==0.13.2
+
+# Geospatial/Weather
+geopy==2.4.1
+pytemperature==2.0.0
+requests==2.32.5
+
+# Image processing
+Pillow==11.3.0
+
+# Optional (for API key management)
+python-dotenv==0.9.9
