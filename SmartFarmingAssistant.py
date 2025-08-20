@@ -4,7 +4,6 @@ import pandas as pd
 import numpy as np
 import joblib
 from geopy.geocoders import Nominatim
-import pytemperature
 import matplotlib.pyplot as plt
 import seaborn as sns
 import datetime
@@ -15,6 +14,21 @@ import os
 #Load environment variables
 load_dotenv()
 
+def celsius_to_fahrenheit(celsius):
+    """Convert Celsius to Fahrenheit"""
+    return (celsius * 9/5) + 32
+
+def fahrenheit_to_celsius(fahrenheit):
+    """Convert Fahrenheit to Celsius"""
+    return (fahrenheit - 32) * 5/9
+
+def kelvin_to_celsius(kelvin):
+    """Convert Kelvin to Celsius"""
+    return kelvin - 273.15
+
+def celsius_to_kelvin(celsius):
+    """Convert Celsius to Kelvin"""
+    return celsius + 273.15
 # Load models
 @st.cache_resource
 def load_models():
@@ -148,4 +162,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
